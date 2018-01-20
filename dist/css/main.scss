@@ -1,6 +1,32 @@
 @import '../css/colors.scss';
+@import '../font/font.scss';
 
-body {
-    background-color: $lgray;
-    color: grey;
+.heading {
+    font-family: 'Acme';
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+
+    .candidate-name {
+        display: inline-block;
+        padding: 8px;
+        background: lightblue;
+        color: white;
+        font-size: 30px;
+        border-radius: 5px;
+    }
+}
+
+.designation {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    color: lightblue;
+    font-family: 'Acme';
+    font-weight: bold;
+
+    .title {
+        text-indent: 3;
+        letter-spacing: 1px;
+    }
 }

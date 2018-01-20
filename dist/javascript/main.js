@@ -1,3 +1,3 @@
 import '../css/main.scss';
 
-console.log('hello world from rollup and live reload but no css');
+console.log('hello world from rollup and live reload');

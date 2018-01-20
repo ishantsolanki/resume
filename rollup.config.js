@@ -11,14 +11,13 @@ export default {
     },
     plugins: [
         serve(),
-        livereload({
-            watch: [
-                '/dist/javascript',
-                '/dist/css'
-            ]
-        }),
+        livereload(),
         sass({
-            insert: true
+            insert: false,
+            output: 'bundle.css',
+            options: {
+                sourceMap: true
+            }
         })
     ]
   };
