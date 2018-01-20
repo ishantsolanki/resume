@@ -4,9 +4,7 @@
   "description": "Ishant Solanki's resume",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "rollup": "rollup -c --watch",
-    "start": "scripts/serve.sh"
+    "rollup": "rollup -c --watch"
   },
   "repository": {
     "type": "git",
@@ -28,8 +26,5 @@
     "rollup-plugin-sass": "^0.5.3",
     "rollup-plugin-serve": "^0.4.2",
     "rollup-watch": "^4.3.1"
-  },
-  "dependencies": {
-    "express": "^4.16.2"
   }
 }
