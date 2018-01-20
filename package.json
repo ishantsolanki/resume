@@ -1,0 +1,35 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Ishant Solanki's resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rollup": "rollup -c --watch",
+    "start": "scripts/serve.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishantsolanki/resume.git"
+  },
+  "keywords": [
+    "resume",
+    "ishant"
+  ],
+  "author": "Ishant Solanki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ishantsolanki/resume/issues"
+  },
+  "homepage": "https://github.com/ishantsolanki/resume#readme",
+  "devDependencies": {
+    "rollup": "^0.54.1",
+    "rollup-plugin-livereload": "^0.6.0",
+    "rollup-plugin-sass": "^0.5.3",
+    "rollup-plugin-serve": "^0.4.2",
+    "rollup-watch": "^4.3.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
