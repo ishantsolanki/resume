@@ -4,7 +4,8 @@
   "description": "Ishant Solanki's resume",
   "main": "index.js",
   "scripts": {
-    "rollup": "rollup -c --watch"
+    "rollup": "rollup -c --watch",
+    "build": "rm -rf docs && mkdir docs && cp index.html docs/index.html && rollup -c rollup.config.prod.js"
   },
   "repository": {
     "type": "git",
