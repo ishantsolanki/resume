@@ -1,0 +1,65 @@
+@import '../css/colors.scss';
+
+.profile-pic {
+    border-right: 5px solid $turqoise;
+
+    .frame-outer {
+        background-color: $turqoise;
+        height: 100px;
+        border-radius: 50%;
+        width: 100px;
+        float: right;
+        margin-right: 15px;
+    }
+
+    .frame-inner {
+        border-radius: 50%;
+        background-color: white;
+        height: 90px;
+        width: 90px;
+        position: relative;
+        top: 5px;
+        left: 5px;
+        background-image: url('https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a.jpeg');
+        background-size: 100%;
+    }
+}
+
+.heading {
+    font-family: 'Open Sans Bold';
+    text-align: left;
+    margin-top: 20px;
+    display: block;
+
+    .candidate-name {
+        display: inline-block;
+        color: $cello;
+        font-size: 30px;
+        margin-left: 15px;
+
+        .first-name {
+            font-family: 'Open Sans Bold';
+            margin-right: -10px;
+        }
+        .last-name {
+            font-family: 'Open Sans'
+        }
+    }
+
+    .designation {
+        display: block;
+        color: $turqoise;
+        font-size: 21.5px;
+        margin: -12px 0 0 15px;
+
+
+        .job-title {
+
+            .first {
+                font-family: 'Open Sans';
+                margin-right: -8px;
+            }
+        }
+    }
+}
+

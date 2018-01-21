@@ -1,34 +1,105 @@
-a {
-  color: green; }
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215; }
 
 /* latin */
 @font-face {
-  font-family: 'Acme';
+  font-family: 'Open Sans Bold';
   font-style: normal;
-  font-weight: 400;
-  src: local("Acme Regular"), local("Acme-Regular"), url(https://fonts.gstatic.com/s/acme/v7/FDMh4aixPTtSeEPULD_zPPesZW2xOQ-xsNqO47m55DA.woff2) format("woff2");
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215; }
 
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto); }
+  .main .profile-pic {
+    grid-row: 1;
+    grid-column: 1; }
+  .main .heading {
+    grid-row: 1;
+    grid-column: 2 / 3; }
+  .main .skills {
+    grid-row: 2;
+    grid-column: 1; }
+  .main .tools {
+    grid-row: 2;
+    grid-column: 2; }
+  .main .experience {
+    grid-row: 3;
+    grid-column: 1 / 3; }
+  .main .projects {
+    grid-row: 4;
+    grid-column: 1; }
+  .main .contact {
+    grid-row: 4;
+    grid-column: 2; }
+body {
+  background-color: #ffefef78; }
+
+.profile-pic {
+  border-right: 5px solid #40dde0; }
+  .profile-pic .frame-outer {
+    background-color: #40dde0;
+    height: 100px;
+    border-radius: 50%;
+    width: 100px;
+    float: right;
+    margin-right: 15px; }
+  .profile-pic .frame-inner {
+    border-radius: 50%;
+    background-color: white;
+    height: 90px;
+    width: 90px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    background-image: url("https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a.jpeg");
+    background-size: 100%; }
+
 .heading {
-  font-family: 'Acme';
-  text-align: center;
+  font-family: 'Open Sans Bold';
+  text-align: left;
   margin-top: 20px;
   display: block; }
   .heading .candidate-name {
     display: inline-block;
-    padding: 8px;
-    background: lightblue;
-    color: white;
+    color: #1c3d5c;
     font-size: 30px;
-    border-radius: 5px; }
+    margin-left: 15px; }
+    .heading .candidate-name .first-name {
+      font-family: 'Open Sans Bold';
+      margin-right: -10px; }
+    .heading .candidate-name .last-name {
+      font-family: 'Open Sans'; }
+  .heading .designation {
+    display: block;
+    color: #40dde0;
+    font-size: 21.5px;
+    margin: -12px 0 0 15px; }
+    .heading .designation .job-title .first {
+      font-family: 'Open Sans';
+      margin-right: -8px; }
+body {
+  background-color: #ffefef78; }
 
-.designation {
-  display: block;
-  text-align: center;
-  margin-top: 5px;
-  color: lightblue;
+.skills .title {
+  color: red; }
+
+.skills .content .skill-list {
+  padding-left: 20px;
   font-family: 'Acme';
-  font-weight: bold; }
-  .designation .title {
-    text-indent: 3;
-    letter-spacing: 1px; }
+  font-size: 12px;
+  color: #40dde0; }
+  .skills .content .skill-list .skill-item {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 2px 6px;
+    margin: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 1px 2px #40dde0;
+    line-height: 20px; }
