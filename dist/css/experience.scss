@@ -1,0 +1,66 @@
+@import '../css/colors.scss';
+
+.experience {
+    .timeline-wrapper {
+        display: inline-block;
+
+        .icon-wrapper {
+            display: inline-block;
+            background: $cello;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .timeline {
+            height: 300px;
+            width: 0px;
+            margin-left: 23px;
+            margin-top: -1px;
+            border: 2px dashed $cello;
+            border-radius: 5px;
+
+            .timeline-dot {
+                background: white;
+                border-radius: 50%;
+                height: 10px;
+                width: 10px;
+                border: 2px solid #1c3d5c;
+                position: relative;
+                right: 7px;
+
+                &.one {
+                    top: 10px;
+                }
+
+                &.two {
+                    top: 50px;
+                }
+
+                &.three {
+                    top: 100px;
+                }
+
+                &.four {
+                    top: 150px;
+                }
+            }
+        }
+    }
+
+    .experience-content {
+        display: inline-block;
+
+        .title {
+            font-family: 'Open Sans';
+            color: $cello;
+            position: relative;
+            top: -5px;
+            left: 5px;
+            font-size: 20px;
+        }
+
+        .job-container {
+            position: absolute;
+        }
+    }
+}

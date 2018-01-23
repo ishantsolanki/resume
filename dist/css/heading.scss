@@ -3,13 +3,15 @@
 .profile-pic {
     border-right: 5px solid $turqoise;
 
-    .frame-outer {
-        background-color: $turqoise;
+    .frame {
         height: 100px;
         border-radius: 50%;
+        border: 5px solid $turqoise;
         width: 100px;
         float: right;
         margin-right: 15px;
+        background-image: url('https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a.jpeg');
+        background-size: 100%;
     }
 
     .frame-inner {
@@ -20,8 +22,6 @@
         position: relative;
         top: 5px;
         left: 5px;
-        background-image: url('https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a.jpeg');
-        background-size: 100%;
     }
 }
 
