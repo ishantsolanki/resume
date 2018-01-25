@@ -2,7 +2,7 @@
 
 .experience {
     .timeline-wrapper {
-        display: inline-block;
+        position: absolute;
 
         .icon-wrapper {
             display: inline-block;
@@ -27,9 +27,10 @@
                 border: 2px solid #1c3d5c;
                 position: relative;
                 right: 7px;
+                background-color: lighten($turqoise, 35%);
 
                 &.one {
-                    top: 10px;
+                    top: 14px;
                 }
 
                 &.two {
@@ -48,7 +49,10 @@
     }
 
     .experience-content {
-        display: inline-block;
+        position: absolute;
+        left: 95px;
+        margin-top: 18px;
+        color: $cello;
 
         .title {
             font-family: 'Open Sans';
@@ -60,7 +64,35 @@
         }
 
         .job-container {
-            position: absolute;
+            margin-top: 20px;
+            margin-left: 5px;
+
+            .job-company {
+                font-size: 16px;
+                text-transform: uppercase;
+
+                .duration {
+                    text-transform: initial;
+                    margin-left: 12px;
+                    font-size: 12px;
+                    background-color: lighten($turqoise, 25%);
+                    padding: 2px 5px;
+                    border-radius: 2px;
+                    font-weight: bold;
+                    color: white;
+                    position: relative;
+                    bottom: 2px;
+                }
+            }
+
+            .job-title {
+                font-size: 14px;
+                color: $turqoise;
+            }
+
+            .job-description {
+                font-size: 12px;
+            }
         }
     }
 }

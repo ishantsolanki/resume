@@ -135,7 +135,7 @@ body {
   box-sizing: initial; }
 
 .experience .timeline-wrapper {
-  display: inline-block; }
+  position: absolute; }
   .experience .timeline-wrapper .icon-wrapper {
     display: inline-block;
     background: #1c3d5c;
@@ -155,9 +155,10 @@ body {
       width: 10px;
       border: 2px solid #1c3d5c;
       position: relative;
-      right: 7px; }
+      right: 7px;
+      background-color: #daf8f9; }
       .experience .timeline-wrapper .timeline .timeline-dot.one {
-        top: 10px; }
+        top: 14px; }
       .experience .timeline-wrapper .timeline .timeline-dot.two {
         top: 50px; }
       .experience .timeline-wrapper .timeline .timeline-dot.three {
@@ -166,7 +167,10 @@ body {
         top: 150px; }
 
 .experience .experience-content {
-  display: inline-block; }
+  position: absolute;
+  left: 95px;
+  margin-top: 18px;
+  color: #1c3d5c; }
   .experience .experience-content .title {
     font-family: 'Open Sans';
     color: #1c3d5c;
@@ -175,4 +179,24 @@ body {
     left: 5px;
     font-size: 20px; }
   .experience .experience-content .job-container {
-    position: absolute; }
+    margin-top: 20px;
+    margin-left: 5px; }
+    .experience .experience-content .job-container .job-company {
+      font-size: 16px;
+      text-transform: uppercase; }
+      .experience .experience-content .job-container .job-company .duration {
+        text-transform: initial;
+        margin-left: 12px;
+        font-size: 12px;
+        background-color: #aef1f2;
+        padding: 2px 5px;
+        border-radius: 2px;
+        font-weight: bold;
+        color: white;
+        position: relative;
+        bottom: 2px; }
+    .experience .experience-content .job-container .job-title {
+      font-size: 14px;
+      color: #40dde0; }
+    .experience .experience-content .job-container .job-description {
+      font-size: 12px; }
