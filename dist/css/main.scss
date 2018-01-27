@@ -31,6 +31,8 @@
     .experience {
         grid-row: 2 / 3;
         grid-column: 1;
+        display: flex;
+        min-width: 560px;
     }
 
     .projects {
