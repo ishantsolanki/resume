@@ -1,19 +1,16 @@
 @import '../css/colors.scss';
-
 .profile-pic {
+    display: inline-block;
     border-right: 5px solid $turqoise;
-
     .frame {
         height: 100px;
         border-radius: 50%;
         border: 5px solid $turqoise;
         width: 100px;
-        float: right;
         margin-right: 15px;
         background-image: url('http://gdurl.com/xLcI');
         background-size: 100%;
     }
-
     .frame-inner {
         border-radius: 50%;
         background-color: white;
@@ -31,35 +28,35 @@
     margin-top: 20px;
     display: block;
 
-    .candidate-name {
+    .heading-text {
         display: inline-block;
-        color: $cello;
-        font-size: 30px;
-        margin-left: 15px;
+        position: relative;
+        bottom: 33px;
 
-        .first-name {
-            font-family: 'Open Sans Bold';
-            margin-right: -10px;
+        .candidate-name {
+            display: inline-block;
+            color: $cello;
+            font-size: 30px;
+            margin-left: 15px;
+            .first-name {
+                font-family: 'Open Sans Bold';
+                margin-right: -10px;
+            }
+            .last-name {
+                font-family: 'Open Sans'
+            }
         }
-        .last-name {
-            font-family: 'Open Sans'
-        }
-    }
-
-    .designation {
-        display: block;
-        color: $turqoise;
-        font-size: 21.5px;
-        margin: -12px 0 0 15px;
-
-
-        .job-title {
-
-            .first {
-                font-family: 'Open Sans';
-                margin-right: -8px;
+        .designation {
+            display: block;
+            color: $turqoise;
+            font-size: 21.5px;
+            margin: -12px 0 0 15px;
+            .job-title {
+                .first {
+                    font-family: 'Open Sans';
+                    margin-right: -8px;
+                }
             }
         }
     }
 }
-
