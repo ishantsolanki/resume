@@ -1,12 +1,34 @@
 @import '../font/font.scss';
+@import '../css/colors.scss';
+
+body {
+    margin: 0;
+}
 
 .main {
     font-family: 'Open Sans';
     display: grid;
-    margin: 25px;
+    margin: auto;
+    padding: 0 25px;
     grid-gap: 25px 0;
+    width: 900px;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto);
+    box-shadow: 0px 0px 60px -15px rgba(0,0,0,0.2);
+
+    .strip {
+        margin: 0 -25px;
+        grid-row: 1;
+        grid-column: 1 / 3;
+        height: 3px;
+        background: repeating-linear-gradient(
+            135deg,
+            $cello,
+            $cello 30px,
+            $turqoise 30px,
+            $turqoise 60px
+        );
+    }
 
     .heading {
         grid-row: 1;

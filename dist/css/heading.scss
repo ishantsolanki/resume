@@ -31,12 +31,13 @@
     .heading-text {
         display: inline-block;
         position: relative;
-        bottom: 33px;
+        bottom: 20px;
+        letter-spacing: -1px;
 
         .candidate-name {
             display: inline-block;
             color: $cello;
-            font-size: 30px;
+            font-size: 40px;
             margin-left: 15px;
             .first-name {
                 font-family: 'Open Sans Bold';
@@ -49,8 +50,10 @@
         .designation {
             display: block;
             color: $turqoise;
-            font-size: 21.5px;
+            font-size: 29px;
             margin: -12px 0 0 15px;
+            position: relative;
+            bottom: 10px;
             .job-title {
                 .first {
                     font-family: 'Open Sans';
