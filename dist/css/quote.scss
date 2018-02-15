@@ -1,0 +1,17 @@
+@import '../css/colors.scss';
+
+.quote {
+    color: $cello;
+    .fa-quote-left {
+        position: relative;
+        left: 50px;
+        vertical-align: super;
+    };
+
+    .quote-content {
+        display: inline;
+        margin-left: 50px;
+        font-style: italic;
+        font-family: 'Bree Serif', serif;
+    }
+}

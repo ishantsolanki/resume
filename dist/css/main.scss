@@ -12,10 +12,11 @@ body {
     font-family: 'Open Sans';
     display: grid;
     margin: auto;
+    margin-bottom: 50px;
     padding: 0 25px;
     grid-gap: 25px 10px;
     width: 900px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: minmax(100px, auto);
     box-shadow: 0px 0px 60px -15px rgba(0,0,0,0.2); // generate stripes using http://www.stripegenerator.com/
     background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAMklEQVQYV2NkwAI+fPgwkxFdHCQoICCQjiIBEwQphkuABEECINVwCWSVcKOQBWH2gcQANt8e2as2Kr4AAAAASUVORK5CYII=
@@ -24,7 +25,7 @@ body {
     .strip {
         margin: 0 -25px;
         grid-row: 1;
-        grid-column: 1 / 3;
+        grid-column: 1;
         height: 3px;
         background: repeating-linear-gradient(
             135deg,
@@ -37,34 +38,18 @@ body {
 
     .heading {
         grid-row: 1;
-        grid-column: 1 / 3;
+        grid-column: 1;
         min-width: 270px;
     }
 
-    .skills {
+    .quote {
         grid-row: 2;
-        grid-column: 2;
-    }
-
-    .tools {
-        grid-row: 2;
-        grid-column: 2;
     }
 
     .experience {
-        grid-row: 2 / 3;
+        grid-row: 3;
         grid-column: 1;
         display: flex;
         min-width: 560px;
-    }
-
-    .projects {
-        grid-row: 4;
-        grid-column: 1;
-    }
-
-    .contact {
-        grid-row: 4;
-        grid-column: 2;
     }
 }
