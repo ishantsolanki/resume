@@ -1,8 +1,11 @@
 @import '../css/colors.scss';
 
 .quote {
+    padding: 20px 0;
     color: $cello;
+
     .fa-quote-left {
+        color: rgba($cello, 0.85);
         position: relative;
         left: 50px;
         vertical-align: super;

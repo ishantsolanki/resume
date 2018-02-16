@@ -9,11 +9,11 @@ body {
 }
 
 .main {
-    font-family: 'Open Sans';
+    font-family: 'Source Sans Pro';
     display: grid;
     margin: auto;
     margin-bottom: 50px;
-    padding: 0 25px;
+    padding: 0 25px 50px 25px;
     grid-gap: 25px 10px;
     width: 900px;
     grid-template-columns: repeat(1, 1fr);
