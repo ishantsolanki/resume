@@ -27,5 +27,8 @@
     "rollup-plugin-sass": "^0.5.3",
     "rollup-plugin-serve": "^0.4.2",
     "rollup-watch": "^4.3.1"
+  },
+  "dependencies": {
+    "rollup-plugin-replace-html-vars": "^1.0.3"
   }
 }
