@@ -278,11 +278,14 @@ body {
   color: #1c3d5c; }
   .quote .fa-quote-left {
     color: rgba(28, 61, 92, 0.85);
+    display: inline-block;
+    font-size: 60px;
+    vertical-align: super;
+    margin-right: 15px;
     position: relative;
-    left: 50px;
-    vertical-align: super; }
+    bottom: 12px; }
   .quote .quote-content {
-    display: inline;
-    margin-left: 50px;
+    display: inline-block;
     font-style: italic;
+    width: 800px;
     font-family: 'Bree Serif', serif; }
