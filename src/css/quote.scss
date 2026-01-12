@@ -1,23 +1,20 @@
-@import '../css/colors.scss';
+@import "../css/colors.scss";
 
 .quote {
-    padding: 20px 0;
-    color: $cello;
+  color: $cello;
+  text-align: center;
 
-    .fa-quote-left {
-        color: rgba(28, 61, 92, 0.85);
-        display: inline-block;
-        font-size: 60px;
-        vertical-align: super;
-        margin-right: 15px;
-        position: relative;
-        bottom: 12px;
-    };
+  .fa-quote-left {
+    color: rgba(28, 61, 92, 0.85);
+    display: inline-block;
+    font-size: 10px;
+    vertical-align: super;
+  }
 
-    .quote-content {
-        display: inline-block;
-        font-style: italic;
-        width: 800px;
-        font-family: 'Bree Serif', serif;
-    }
+  .quote-content {
+    display: inline-block;
+    font-style: italic;
+    width: 100%;
+    font-family: "Bree Serif", serif;
+  }
 }
