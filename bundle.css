@@ -1,61 +1,88 @@
-/* latin */
+body {
+  box-sizing: initial;
+}
+
+.skills .title {
+  color: #1c3d5c;
+  font-size: 20px;
+}
+.skills .title .skills-bubble {
+  display: inline-block;
+  background-color: #1c3d5c;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 13px;
+}
+.skills .content .skill-name {
+  padding: 0 8px;
+}
+.skills .content .exp-bar {
+  width: 140px;
+  margin: 5px 0 5px 5px;
+  background: black;
+  height: 3px;
+}/* latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215; }
-
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
 /* latin */
 @font-face {
-  font-family: 'Open Sans Bold';
+  font-family: "Open Sans Bold";
   font-style: normal;
   font-weight: 700;
   src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215; }
-
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
 /* latin */
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 300;
   src: local("Source Sans Pro Light"), local("SourceSansPro-Light"), url(https://fonts.gstatic.com/s/sourcesanspro/v11/toadOcfmlt9b38dHJxOBGCP2LEk6lMzYsRqr3dHFImA.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215; }
-
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
 /* latin */
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 400;
   src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"), url(https://fonts.gstatic.com/s/sourcesanspro/v11/ODelI1aHBYDBqgeIAH2zlJbPFduIYtoLzwST68uhz_Y.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215; }
-
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
 /* latin */
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 700;
   src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url(https://fonts.gstatic.com/s/sourcesanspro/v11/toadOcfmlt9b38dHJxOBGJkF8H8ye47wsfpWywda8og.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215; }
-
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
 /* latin */
 @font-face {
-  font-family: 'Bree Serif';
+  font-family: "Bree Serif";
   font-style: normal;
   font-weight: 400;
   src: local("Bree Serif Regular"), local("BreeSerif-Regular"), url(https://fonts.gstatic.com/s/breeserif/v7/4UaHrEJCrhhnVA3DgluA96rp57F2IwM.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 body {
-  box-sizing: initial; }
+  box-sizing: initial;
+}
 
 body {
   margin: 0;
   -webkit-print-color-adjust: exact;
-  color-adjust: exact; }
+  color-adjust: exact;
+}
 
 .main {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   display: grid;
   margin: auto;
   margin-bottom: 50px;
@@ -65,227 +92,243 @@ body {
   grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: minmax(100px, auto);
   box-shadow: 0px 0px 60px -15px rgba(0, 0, 0, 0.2);
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAMklEQVQYV2NkwAI+fPgwkxFdHCQoICCQjiIBEwQphkuABEECINVwCWSVcKOQBWH2gcQANt8e2as2Kr4AAAAASUVORK5CYII=) repeat; }
-  .main .strip {
-    margin: 0 -25px;
-    grid-row: 1;
-    grid-column: 1;
-    height: 3px;
-    background: repeating-linear-gradient(135deg, #1c3d5c, #1c3d5c 30px, #40dde0 30px, #40dde0 60px); }
-  .main .heading {
-    grid-row: 1;
-    grid-column: 1;
-    min-width: 270px; }
-  .main .quote {
-    grid-row: 2; }
-  .main .experience {
-    grid-row: 3;
-    grid-column: 1;
-    display: flex;
-    min-width: 560px; }
-body {
-  box-sizing: initial; }
-
-.profile-pic {
-  display: inline-block;
-  border-right: 5px solid #40dde0; }
-  .profile-pic .frame {
-    height: 100px;
-    border-radius: 50%;
-    border: 5px solid #40dde0;
-    width: 100px;
-    margin-right: 15px;
-    background-image: url("http://gdurl.com/xLcI");
-    background-size: 100%; }
-  .profile-pic .frame-inner {
-    border-radius: 50%;
-    background-color: white;
-    height: 90px;
-    width: 90px;
-    position: relative;
-    top: 5px;
-    left: 5px; }
-
-.heading {
-  font-family: 'Open Sans Bold';
-  text-align: left;
-  margin-top: 25px;
-  display: block; }
-  .heading .heading-text {
-    display: inline-block;
-    position: relative;
-    bottom: 20px;
-    letter-spacing: -1px; }
-    .heading .heading-text .candidate-name {
-      display: inline-block;
-      color: #1c3d5c;
-      font-size: 40px;
-      margin-left: 15px; }
-      .heading .heading-text .candidate-name .first-name {
-        font-family: 'Open Sans Bold';
-        margin-right: -10px; }
-      .heading .heading-text .candidate-name .last-name {
-        font-family: 'Open Sans'; }
-    .heading .heading-text .designation {
-      display: block;
-      color: #40dde0;
-      font-size: 29px;
-      margin: -12px 0 0 15px;
-      position: relative;
-      bottom: 10px; }
-      .heading .heading-text .designation .job-title .first {
-        font-family: 'Open Sans';
-        margin-right: -8px; }
-  .heading .contact {
-    color: #1c3d5c;
-    font-family: 'Open Sans';
-    font-weight: normal;
-    display: block;
-    position: relative;
-    top: 20px;
-    float: right; }
-    .heading .contact a {
-      color: inherit; }
-    .heading .contact .fa-at, .heading .contact .fa-phone {
-      color: #1c3d5c;
-      padding-right: 10px; }
-    .heading .contact .links {
-      text-align: center; }
-      .heading .contact .links .link {
-        display: inline-block;
-        padding: 5px 15px;
-        font-size: 25px; }
-body {
-  box-sizing: initial; }
-
-.skills .title {
-  color: #1c3d5c;
-  font-size: 20px; }
-  .skills .title .skills-bubble {
-    display: inline-block;
-    background-color: #1c3d5c;
-    color: white;
-    padding: 10px;
-    border-radius: 50%;
-    vertical-align: middle;
-    margin-right: 13px; }
-
-.skills .content .skill-name {
-  padding: 0 8px; }
-
-.skills .content .exp-bar {
-  width: 140px;
-  margin: 5px 0 5px 5px;
-  background: black;
-  height: 3px; }
-body {
-  box-sizing: initial; }
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAMklEQVQYV2NkwAI+fPgwkxFdHCQoICCQjiIBEwQphkuABEECINVwCWSVcKOQBWH2gcQANt8e2as2Kr4AAAAASUVORK5CYII=) repeat;
+}
+.main .strip {
+  margin: 0 -25px;
+  grid-row: 1;
+  grid-column: 1;
+  height: 3px;
+  background: repeating-linear-gradient(135deg, #1c3d5c, #1c3d5c 30px, #40dde0 30px, #40dde0 60px);
+}
+.main .heading {
+  grid-row: 1;
+  grid-column: 1;
+  min-width: 270px;
+}
+.main .quote {
+  grid-row: 2;
+}
+.main .experience {
+  grid-row: 3;
+  grid-column: 1;
+  display: flex;
+  min-width: 560px;
+}body {
+  box-sizing: initial;
+}
 
 .experience .timeline-wrapper .icon-wrapper {
   display: inline-block;
   background: #1c3d5c;
   padding: 10px;
-  border-radius: 50%; }
-
+  border-radius: 50%;
+}
 .experience .timeline-wrapper .timeline {
   height: 98%;
   width: 0px;
   margin-left: 28px;
   border: 2px dashed #1c3d5c;
-  border-radius: 5px; }
-
+  border-radius: 5px;
+}
 .experience .experience-content {
-  color: #1c3d5c; }
-  .experience .experience-content .title {
-    color: #1c3d5c;
-    position: relative;
-    left: 5px;
-    font-size: 25px; }
-    .experience .experience-content .title.spacing {
-      margin-top: 40px; }
-    .experience .experience-content .title .exp-bubble {
-      display: inline-block;
-      background-color: #1c3d5c;
-      font-size: 20px;
-      padding: 10px;
-      border-radius: 50%;
-      right: 0;
-      margin-left: -37px;
-      margin-right: 12px;
-      vertical-align: middle;
-      width: 40px; }
-  .experience .experience-content .job-container {
-    margin-top: 40px;
-    margin-left: 46px; }
-    .experience .experience-content .job-container .job-company {
-      font-size: 18px;
-      text-transform: uppercase; }
-      .experience .experience-content .job-container .job-company .timeline-dot {
-        height: 10px;
-        display: inline-block;
-        width: 10px;
-        border-radius: 50%;
-        background-color: #98edee;
-        border: 2px solid #1c3d5c;
-        margin-left: -55px;
-        margin-right: 36px; }
-      .experience .experience-content .job-container .job-company .duration {
-        text-transform: initial;
-        font-size: 12px;
-        font-family: 'Open sans';
-        background-color: #aef1f2;
-        padding: 2px 5px;
-        margin-right: 20px;
-        border-radius: 2px;
-        font-weight: bold;
-        color: #1c3d5c;
-        position: relative;
-        bottom: 2px;
-        float: right;
-        transform: skewX(-10deg); }
-    .experience .experience-content .job-container .job-title {
-      font-size: 16px;
-      color: #40dde0; }
-    .experience .experience-content .job-container .job-description {
-      font-size: 15px; }
-      .experience .experience-content .job-container .job-description ul {
-        padding-left: 20px; }
-        .experience .experience-content .job-container .job-description ul li {
-          padding-bottom: 7px; }
-      .experience .experience-content .job-container .job-description .tags ul {
-        padding-left: 15px;
-        margin: 0;
-        display: flex; }
-        .experience .experience-content .job-container .job-description .tags ul li {
-          display: inline-flex;
-          padding: 3px 10px;
-          border: 1px solid rgba(28, 61, 92, 0.3);
-          border-right: none;
-          border-left: none;
-          box-shadow: -1px 1px 1px 0px rgba(28, 61, 92, 0.3); }
-          .experience .experience-content .job-container .job-description .tags ul li:first-child {
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px; }
-          .experience .experience-content .job-container .job-description .tags ul li:last-child {
-            border-right: 1px solid rgba(28, 61, 92, 0.3);
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px; }
-body {
-  box-sizing: initial; }
+  color: #1c3d5c;
+}
+.experience .experience-content .title {
+  color: #1c3d5c;
+  position: relative;
+  left: 5px;
+  font-size: 25px;
+}
+.experience .experience-content .title.spacing {
+  margin-top: 40px;
+}
+.experience .experience-content .title .exp-bubble {
+  display: inline-block;
+  background-color: #1c3d5c;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  right: 0;
+  margin-left: -37px;
+  margin-right: 12px;
+  vertical-align: middle;
+  width: 40px;
+}
+.experience .experience-content .job-container {
+  margin-top: 40px;
+  margin-left: 46px;
+}
+.experience .experience-content .job-container .job-company {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.experience .experience-content .job-container .job-company .timeline-dot {
+  height: 10px;
+  display: inline-block;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #98edee;
+  border: 2px solid #1c3d5c;
+  margin-left: -55px;
+  margin-right: 36px;
+}
+.experience .experience-content .job-container .job-company .duration {
+  text-transform: initial;
+  font-size: 12px;
+  font-family: "Open sans";
+  background-color: #aef1f2;
+  padding: 2px 5px;
+  margin-right: 20px;
+  border-radius: 2px;
+  font-weight: bold;
+  color: #1c3d5c;
+  position: relative;
+  bottom: 2px;
+  float: right;
+  transform: skewX(-10deg);
+}
+.experience .experience-content .job-container .job-title {
+  font-size: 16px;
+  color: #40dde0;
+}
+.experience .experience-content .job-container .job-description {
+  font-size: 15px;
+}
+.experience .experience-content .job-container .job-description ul {
+  padding-left: 20px;
+}
+.experience .experience-content .job-container .job-description ul li {
+  padding-bottom: 7px;
+}
+.experience .experience-content .job-container .job-description .tags ul {
+  padding-left: 15px;
+  margin: 0;
+  display: flex;
+}
+.experience .experience-content .job-container .job-description .tags ul li {
+  display: inline-flex;
+  padding: 3px 10px;
+  border: 1px solid rgba(28, 61, 92, 0.3);
+  border-right: none;
+  border-left: none;
+  box-shadow: -1px 1px 1px 0px rgba(28, 61, 92, 0.3);
+}
+.experience .experience-content .job-container .job-description .tags ul li:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.experience .experience-content .job-container .job-description .tags ul li:last-child {
+  border-right: 1px solid rgba(28, 61, 92, 0.3);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}body {
+  box-sizing: initial;
+}
 
 .quote {
   padding: 20px 0;
-  color: #1c3d5c; }
-  .quote .fa-quote-left {
-    color: rgba(28, 61, 92, 0.85);
-    display: inline-block;
-    font-size: 60px;
-    vertical-align: super;
-    margin-right: 15px;
-    position: relative;
-    bottom: 12px; }
-  .quote .quote-content {
-    display: inline-block;
-    font-style: italic;
-    width: 800px;
-    font-family: 'Bree Serif', serif; }
+  color: #1c3d5c;
+}
+.quote .fa-quote-left {
+  color: rgba(28, 61, 92, 0.85);
+  display: inline-block;
+  font-size: 60px;
+  vertical-align: super;
+  margin-right: 15px;
+  position: relative;
+  bottom: 12px;
+}
+.quote .quote-content {
+  display: inline-block;
+  font-style: italic;
+  width: 800px;
+  font-family: "Bree Serif", serif;
+}body {
+  box-sizing: initial;
+}
+
+.profile-pic {
+  display: inline-block;
+  border-right: 5px solid #40dde0;
+}
+.profile-pic .frame {
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #40dde0;
+  width: 100px;
+  margin-right: 15px;
+  background-image: url("http://gdurl.com/xLcI");
+  background-size: 100%;
+}
+.profile-pic .frame-inner {
+  border-radius: 50%;
+  background-color: white;
+  height: 90px;
+  width: 90px;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+.heading {
+  font-family: "Open Sans Bold";
+  text-align: left;
+  margin-top: 25px;
+  display: block;
+}
+.heading .heading-text {
+  display: inline-block;
+  position: relative;
+  bottom: 20px;
+  letter-spacing: -1px;
+}
+.heading .heading-text .candidate-name {
+  display: inline-block;
+  color: #1c3d5c;
+  font-size: 40px;
+  margin-left: 15px;
+}
+.heading .heading-text .candidate-name .first-name {
+  font-family: "Open Sans Bold";
+  margin-right: -10px;
+}
+.heading .heading-text .candidate-name .last-name {
+  font-family: "Open Sans";
+}
+.heading .heading-text .designation {
+  display: block;
+  color: #40dde0;
+  font-size: 29px;
+  margin: -12px 0 0 15px;
+  position: relative;
+  bottom: 10px;
+}
+.heading .heading-text .designation .job-title .first {
+  font-family: "Open Sans";
+  margin-right: -8px;
+}
+.heading .contact {
+  color: #1c3d5c;
+  font-family: "Open Sans";
+  font-weight: normal;
+  display: block;
+  position: relative;
+  top: 20px;
+  float: right;
+}
+.heading .contact a {
+  color: inherit;
+}
+.heading .contact .fa-at, .heading .contact .fa-phone {
+  color: #1c3d5c;
+  padding-right: 10px;
+}
+.heading .contact .links {
+  text-align: center;
+}
+.heading .contact .links .link {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 25px;
+}
